@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { getTopMenu } from "@/router/utils";
 import { useNav } from "@/layout/hooks/useNav";
-
+import Logo from "@/assets/logo.png";
 defineProps({
   collapse: Boolean
 });
@@ -19,8 +19,9 @@ const { title, getLogo } = useNav();
         class="sidebar-logo-link"
         :to="getTopMenu()?.path ?? '/'"
       >
-        <img :src="getLogo()" alt="logo" />
-        <span class="sidebar-title">{{ title }}</span>
+        <!-- <img :src="getLogo()" alt="logo" /> -->
+        <img :src="Logo" alt="logo" />
+        <!-- <span class="sidebar-title">{{ title }}</span> -->
       </router-link>
       <router-link
         v-else
@@ -29,8 +30,9 @@ const { title, getLogo } = useNav();
         class="sidebar-logo-link"
         :to="getTopMenu()?.path ?? '/'"
       >
-        <img :src="getLogo()" alt="logo" />
-        <span class="sidebar-title">{{ title }}</span>
+        <!-- <img :src="getLogo()" alt="logo" /> -->
+        <img :src="Logo" alt="logo" />
+        <!-- <span class="sidebar-title">{{ title }}</span> -->
       </router-link>
     </transition>
   </div>

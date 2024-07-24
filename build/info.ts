@@ -7,7 +7,24 @@ import boxen, { type Options as BoxenOptions } from "boxen";
 dayjs.extend(duration);
 
 const welcomeMessage = gradientString("cyan", "magenta").multiline(
-  `您好! 欢迎使用 pure-admin 开源项目\n我们为您精心准备了下面两个贴心的保姆级文档\nhttps://pure-admin.github.io/pure-admin-doc\nhttps://pure-admin-utils.netlify.app`
+  `
+DDDDDDDDDDDDD           SSSSSSSSSSSSSSS
+D::::::::::::DDD      SS:::::::::::::::S
+D:::::::::::::::DD   S:::::SSSSSS::::::S
+DDD:::::DDDDD:::::D  S:::::S     SSSSSSS
+  D:::::D    D:::::D S:::::S
+  D:::::D     D:::::DS:::::S
+  D:::::D     D:::::D S::::SSSS
+  D:::::D     D:::::D  SS::::::SSSSS
+  D:::::D     D:::::D    SSS::::::::SS
+  D:::::D     D:::::D       SSSSSS::::S
+  D:::::D     D:::::D            S:::::S
+  D:::::D    D:::::D             S:::::S
+DDD:::::DDDDD:::::D  SSSSSSS     S:::::S
+D:::::::::::::::DD   S::::::SSSSSS:::::S
+D::::::::::::DDD     S:::::::::::::::SS
+DDDDDDDDDDDDD         SSSSSSSSSSSSSSS
+`
 );
 
 const boxenOptions: BoxenOptions = {

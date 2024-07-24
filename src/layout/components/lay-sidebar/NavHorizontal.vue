@@ -7,7 +7,7 @@ import LayNotice from "../lay-notice/index.vue";
 import { usePermissionStoreHook } from "@/store/modules/permission";
 import LaySidebarItem from "../lay-sidebar/components/SidebarItem.vue";
 import LaySidebarFullScreen from "../lay-sidebar/components/SidebarFullScreen.vue";
-
+import Logo from "@/assets/logo.png";
 import LogoutCircleRLine from "@iconify-icons/ri/logout-circle-r-line";
 import Setting from "@iconify-icons/ri/settings-3-line";
 
@@ -40,8 +40,8 @@ nextTick(() => {
     class="horizontal-header"
   >
     <div class="horizontal-header-left" @click="backTopMenu">
-      <img :src="getLogo()" alt="logo" />
-      <span>{{ title }}</span>
+      <img :src="Logo" alt="logo" />
+      <!-- <span>{{ title }}</span> -->
     </div>
     <el-menu
       ref="menuRef"
